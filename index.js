@@ -4,7 +4,8 @@ const chalk = require("chalk")
 const port = 3001
 
 const server = http.createServer((req, res) => {
-	console.log("Server!")
+	console.log("Request method:", req.method)
+	console.log("Request url:", req.url)
 
 	res.end("Hello from server!")
 })
